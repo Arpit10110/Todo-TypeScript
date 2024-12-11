@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    font-size: 75%;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+body{
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+.todo-head{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+.box {
+    width: 50%;
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #ffffff1f;
+}
+#form {
+    width: 100%;
+}
+#form input {
+    width: -webkit-fill-available;
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+    background-color: #ffffff17;
+    border-radius: 5px;
+}
+.task h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 80%;
+}
+.task button{
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding: 0.4rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.checkbtn{
+    background-color: #0073a2 !important;
+}
+
+.checked{
+    text-decoration:line-through;
+}
+
+@media only screen and (width<=600px) {
+    html{
+        font-size:60%
+    }
+    .box{
+        width: 90%;
+    }
+    .task h2{
+        width: 65%;
+    }
+}
